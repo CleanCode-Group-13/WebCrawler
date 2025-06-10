@@ -47,6 +47,7 @@ public class ExceptionLogger {
             message.append ("Undefined Exception - ");
         }
 
+        assert e != null;
         message.append(e.getMessage());
         return message.toString();
     }

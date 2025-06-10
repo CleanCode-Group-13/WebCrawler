@@ -65,3 +65,17 @@
 [2025-04-29T23:04:02.401054200] Exception: DeepLException - Too many requests, DeepL servers are currently experiencing high load
 [2025-04-29T23:04:04.759340300] Exception: DeepLException - Too many requests, DeepL servers are currently experiencing high load
 [2025-04-29T23:04:06.438118400] Exception: DeepLException - Too many requests, DeepL servers are currently experiencing high load
+[2025-06-09T14:34:01.609252800] Exception: IOException - unknown protocol: javascript
+[2025-06-09T14:35:06.434599800] Exception: IOException - unknown protocol: javascript
+[2025-06-09T14:36:08.522086300] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-09T14:36:16.280920500] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-09T14:41:47.994857800] Exception: IOException - unknown protocol: javascript
+[2025-06-09T14:42:37.657043700] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-09T14:42:43.159964400] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-09T14:47:29.973601200] Exception: IOException - Only http & https protocols supported
+[2025-06-09T14:47:30.830180200] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-09T14:47:55.330320600] Exception: IOException - Only http & https protocols supported
+[2025-06-09T21:28:46.153378400] Exception: MalformedURLException - invalid-url
+[2025-06-09T22:30:39.059450400] Exception: MalformedURLException - invalid-url
+[2025-06-09T22:47:11.384848400] Exception: MalformedURLException - invalid-url
+[2025-06-09T23:08:57.417594600] Exception: MalformedURLException - Simulated exception

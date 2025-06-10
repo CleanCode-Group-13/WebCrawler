@@ -31,6 +31,7 @@ public class ResultProducer {
             report.append(newLine());
             report.append(newLine());
 
+            /**
             ArrayList<String> headings = websiteNode.getWebsite().translatedHeadings;
             for (String translatedHeading : headings) {
                     String[] headingLevelAndHeading = translatedHeading.split(" ", 2);
@@ -41,7 +42,18 @@ public class ResultProducer {
                     report.append(" ").append(headingLevelAndHeading[1]).append(newLine());
 
             }
+             **/
+            ArrayList<String> headings = websiteNode.getWebsite().headings;
+            for (String heading : headings) {
+                String[] headingLevelAndHeading = heading.split(" ", 2);
+                // uses only the number of the string "h1 Example Heading", result: '1'
+                int headingLevel = Integer.parseInt(headingLevelAndHeading[0].substring(1));
 
+
+                report.append("#".repeat(Math.max(0, headingLevel)));
+                report.append(" ").append(headingLevelAndHeading[1]).append(newLine());
+
+            }
             report.append(newLine());
             report.append("Functional Links: ");
             report.append(newLine());
@@ -72,10 +84,16 @@ public class ResultProducer {
     String newLine() {
         return "\n";
     }
+    /**
     String assembleInput() {
         return "Starting Website: <a>" + userData.startingWebsite + "</a>\n"
                 + "Crawling Depth: " + userData.maxCrawlingDepth + "\n"
                 + "Target Language: " + userData.targetLanguage + "\n";
+    }
+     **/
+    String assembleInput() {
+        return "Starting Website: <a>" + userData.startingWebsite + "</a>\n"
+                + "Crawling Depth: " + userData.maxCrawlingDepth + "\n";
     }
 
     String makeFunctionalLink(String text) {

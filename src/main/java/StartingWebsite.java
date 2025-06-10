@@ -6,9 +6,6 @@ import java.util.Scanner;
 
 public class StartingWebsite {
     protected String startingUrl;
-
-
-
     /**
     public String getStartingWebsiteFromUser() {
         Scanner scanner = new Scanner(System.in);
