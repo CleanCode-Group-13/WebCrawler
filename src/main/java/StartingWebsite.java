@@ -1,5 +1,7 @@
 import java.io.IOException;
-import java.net.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
 import java.util.Scanner;
 
 public class StartingWebsite {
@@ -31,8 +33,7 @@ public class StartingWebsite {
 
     public boolean isValidWebsite() {
         try {
-            URI uri = new URI(startingUrl);
-            URL url = uri.toURL();
+            URL url = new URL(startingUrl);
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
             connection.setRequestMethod("HEAD");
             connection.setConnectTimeout(5000);
@@ -50,8 +51,6 @@ public class StartingWebsite {
             // Error connecting to the URL
             System.out.println("There was an error connecting to the URL: " + e.getMessage());
             return false;
-        } catch (URISyntaxException e) {
-            throw new RuntimeException(e);
         }
     }
 }

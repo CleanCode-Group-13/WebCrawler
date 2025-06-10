@@ -9,7 +9,6 @@ class ResultProducerTest {
         UserData userData = new UserData();
         userData.startingWebsite = "https://javatpoint.com";
         userData.maxCrawlingDepth = 2;
-        //userData.targetLanguage = "German";
 
         WebsiteNode websiteNode = new WebsiteNode();
         Website website = new Website();
@@ -24,7 +23,6 @@ class ResultProducerTest {
                 + userData.startingWebsite + "</a>"
                 + "\nCrawling Depth: "
                 + userData.maxCrawlingDepth
-                + "\nTarget Language: "
                 + "\n\n";
 
         assertEquals(testString, resultProducer.makeMdString());
