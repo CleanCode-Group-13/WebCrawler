@@ -9,18 +9,15 @@ import java.time.LocalDateTime;
 public class ExceptionLogger {
 
     /**
-     * /*
+     *
      *     Exceptions to handle:
      *
      *     MalformedURLException
      *     IOException
      *     IllegalArgumentException
-     *     DeeplLException and its subclasses
      *      */
 
     private static final String LOG_FILE_PATH = "exceptions.log";
-
-
 
     public static void log(Exception e) {
         String message = createLogMessage(e);
@@ -39,8 +36,6 @@ public class ExceptionLogger {
             message.append("MalformedURLException - ");
         }else if (e instanceof IllegalArgumentException){
             message.append("IllegalArgumentException - ");
-        }else if(e instanceof DeepLException){
-            message.append("DeepLException - ");
         }else if(e instanceof InterruptedException){
             message.append ("InterruptedException - ");
         }else if (e != null){
