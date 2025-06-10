@@ -19,7 +19,6 @@ public class WebCrawlerTest {
 
     @Test
     public void testGetWebsiteHeadingsAndLinks_addsHeadingsCorrectly() throws IOException {
-        // Arrange
         String url = "https://example.com";
         String html = "<html><body><h1>Welcome</h1><h2>Subheading</h2></body></html>";
         Document document = Jsoup.parse(html, url);
@@ -28,10 +27,8 @@ public class WebCrawlerTest {
 
         WebCrawler crawler = new WebCrawler(url, fetcher);
 
-        // Act
         Website website = crawler.getWebsiteHeadingsAndLinks();
 
-        // Assert
         assertEquals(2, website.headings.size());
         assertTrue(website.headings.contains("h1 Welcome"));
         assertTrue(website.headings.contains("h2 Subheading"));
@@ -39,7 +36,6 @@ public class WebCrawlerTest {
 
     @Test
     public void testGetWebsiteHeadingsAndLinks_addsNoLinksWhenNonePresent() throws IOException {
-        // Arrange
         String url = "https://example.com";
         String html = "<html><body><h1>Test</h1></body></html>";
         Document document = Jsoup.parse(html, url);
@@ -48,26 +44,22 @@ public class WebCrawlerTest {
 
         WebCrawler crawler = new WebCrawler(url, fetcher);
 
-        // Act
         Website website = crawler.getWebsiteHeadingsAndLinks();
 
-        // Assert
         assertTrue(website.functionalLinks.isEmpty());
         assertTrue(website.brokenLinks.isEmpty());
     }
 
     @Test
     public void testGetWebsiteHeadingsAndLinks_handlesIOExceptionGracefully() throws IOException {
-        // Arrange
+
         String url = "https://invalid.url";
         when(fetcher.fetch(url)).thenThrow(new IOException("Simulated exception"));
 
         WebCrawler crawler = new WebCrawler(url, fetcher);
 
-        // Act
         Website website = crawler.getWebsiteHeadingsAndLinks();
 
-        // Assert
         assertNotNull(website);
         assertTrue(website.headings.isEmpty());
         assertTrue(website.functionalLinks.isEmpty());
@@ -76,7 +68,6 @@ public class WebCrawlerTest {
 
     @Test
     public void testGetWebsiteHeadingsAndLinks_addsHeadingsAndLinksCorrectly() throws IOException {
-        // Arrange
         String url = "https://example.com";
         Document mockDocument = Jsoup.parse(
                 "<html>" +
@@ -94,22 +85,16 @@ public class WebCrawlerTest {
 
         WebCrawler crawler = new WebCrawler(url, fetcher);
 
-        // Act
         Website website = crawler.getWebsiteHeadingsAndLinks();
 
-        // Assert
         assertEquals(url, website.urlString);
 
-        // Headings
         assertTrue(website.headings.contains("h1 Main Heading"));
         assertTrue(website.headings.contains("h2 Subheading"));
 
-        // Functional link
         assertTrue(website.functionalLinks.contains("https://google.com"));
-        // Broken link
         assertTrue(website.brokenLinks.contains("https://external.com/bad"));
 
-        // Only those two links
         assertEquals(1, website.functionalLinks.size());
         assertEquals(1, website.brokenLinks.size());
     }
