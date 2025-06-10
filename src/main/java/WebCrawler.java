@@ -8,28 +8,34 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 public class WebCrawler {
-    Website website = new Website();
-    Document document; // Jsoup document
+    private final String urlString;
+    private JsoupDocumentFetcher jsoupDocFetcher;
+    Document document;
+    Website website;
 
-    public WebCrawler(String urlString) {
-        website.urlString = urlString;
+    public WebCrawler(String urlString, JsoupDocumentFetcher jsoupDocFetcher) {
+        this.urlString = urlString;
+        this.jsoupDocFetcher = jsoupDocFetcher;
     }
 
     public Website getWebsiteHeadingsAndLinks() {
+        website = new Website();
+        website.urlString = urlString;
         try {
-            document = getDocumentFromJsoup();
+            document = jsoupDocFetcher.fetch(website.urlString);
             addHeadingsToWebsite();
             addLinksToWebsite();
         } catch (IOException e) {
             ExceptionLogger.log(e);
         }
-
         return website;
     }
 
+    /**
     private Document getDocumentFromJsoup() throws IOException {
         return Jsoup.connect(website.urlString).get();
     }
+     **/
     private void addHeadingsToWebsite() {
         for (int i = 0; i <= 6; i++) {
             Elements headings = document.select("h" + i);

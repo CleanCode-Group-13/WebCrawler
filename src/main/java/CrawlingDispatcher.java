@@ -8,13 +8,14 @@ public class CrawlingDispatcher {
     UserData userData;
     WebsiteNode rootNode;
     HashSet<String> crawledUrls = new HashSet<>();
+    JsoupDocumentFetcher jsoupDocumentFetcher = new DocumentFetcher();
 
     public CrawlingDispatcher(UserData userData) {
         this.userData = userData;
     }
 
     public void crawlWeb() {
-        WebCrawler webCrawler = new WebCrawler(userData.startingWebsite);
+        WebCrawler webCrawler = new WebCrawler(userData.startingWebsite, jsoupDocumentFetcher);
         Website website = webCrawler.getWebsiteHeadingsAndLinks();
         rootNode = new WebsiteNode();
         rootNode.setWebsite(website);
@@ -37,7 +38,7 @@ public class CrawlingDispatcher {
                 .map(link -> {
                     crawledUrls.add(link);
                     return CompletableFuture.supplyAsync(() -> {
-                        WebCrawler webCrawler = new WebCrawler(link);
+                        WebCrawler webCrawler = new WebCrawler(link, jsoupDocumentFetcher);
                         Website website = webCrawler.getWebsiteHeadingsAndLinks();
                         WebsiteNode childNode = new WebsiteNode();
                         childNode.setWebsite(website);
