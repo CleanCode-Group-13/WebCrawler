@@ -1,5 +1,3 @@
-import com.deepl.api.DeepLException;
-
 import java.io.BufferedWriter;
 import java.io.FileWriter;
 import java.io.IOException;
