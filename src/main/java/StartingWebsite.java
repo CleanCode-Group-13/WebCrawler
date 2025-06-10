@@ -1,22 +1,10 @@
 import java.io.IOException;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.URL;
+import java.net.*;
 import java.util.Scanner;
 
 public class StartingWebsite {
+
     protected String startingUrl;
-    /**
-    public String getStartingWebsiteFromUser() {
-        Scanner scanner = new Scanner(System.in);
-        do {
-            printPromptForStartingWebsite();
-            startingUrl = scanner.nextLine();
-            prependHttpsIfNecessary();
-        } while (!isValidWebsite());
-        return startingUrl;
-    }
-     **/
 
     public String getStartingWebsiteFromUser() {
         return getStartingWebsiteFromUser(new Scanner(System.in));
@@ -31,8 +19,6 @@ public class StartingWebsite {
         return startingUrl;
     }
 
-
-
     private void printPromptForStartingWebsite() {
         System.out.print("Please enter a starting website: ");
     }
@@ -43,12 +29,12 @@ public class StartingWebsite {
         }
     }
 
-
     public boolean isValidWebsite() {
         try {
-            URL url = new URL(startingUrl);
+            URI uri = new URI(startingUrl);
+            URL url = uri.toURL();
             HttpURLConnection connection = (HttpURLConnection) url.openConnection();
-            connection.setRequestMethod("HEAD"); // method GET would take longer
+            connection.setRequestMethod("HEAD");
             connection.setConnectTimeout(5000);
             connection.setReadTimeout(5000);
             int responseCode = connection.getResponseCode();
@@ -64,9 +50,8 @@ public class StartingWebsite {
             // Error connecting to the URL
             System.out.println("There was an error connecting to the URL: " + e.getMessage());
             return false;
+        } catch (URISyntaxException e) {
+            throw new RuntimeException(e);
         }
     }
-
-
-
 }
