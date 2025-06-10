@@ -138,7 +138,7 @@ public class CrawlingDispatcherTest {
     
     @Test
     void testCrawlWeb_handlesCircularReferences() {
-        // 1. Setup Mock UserData
+
         mockUserData.startingWebsite = "http://example.com/start";
         mockUserData.maxCrawlingDepth = 3; 
         
@@ -157,12 +157,12 @@ public class CrawlingDispatcherTest {
         
         List<WebsiteNode> startChildren = spyCrawlingDispatcher.getRootNode().getChildren();
         assertEquals(1, startChildren.size(), "Start node should have 1 child (pageA)");
-        WebsiteNode pageANode = startChildren.get(0);
+        WebsiteNode pageANode = startChildren.getFirst();
         assertEquals("http://example.com/pageA", pageANode.getWebsite().urlString, "PageA URL mismatch");
         
         List<WebsiteNode> pageAChildren = pageANode.getChildren();
         assertEquals(1, pageAChildren.size(), "PageA node should have 1 child (pageB)");
-        WebsiteNode pageBNode = pageAChildren.get(0);
+        WebsiteNode pageBNode = pageAChildren.getFirst();
         assertEquals("http://example.com/pageB", pageBNode.getWebsite().urlString, "PageB URL mismatch");
         
         assertTrue(pageBNode.getChildren().isEmpty(), "PageB should have no children due to circular reference detection");
@@ -211,7 +211,7 @@ public class CrawlingDispatcherTest {
                         latchForSlowPage.await(5, TimeUnit.SECONDS); 
                         System.out.println("Simulating slow page: Latch released/timed out.");
                     } catch (InterruptedException e) {
-                        Thread.currentThread().interrupt(); // Restore interrupt status
+                        Thread.currentThread().interrupt();
                         System.err.println("Simulating slow page: Interrupted while waiting. Returning null website.");
                         return null; 
                     }
@@ -222,20 +222,8 @@ public class CrawlingDispatcherTest {
             }
             return mockWebCrawler;
         }).when(spyCrawlingDispatcher).createWebCrawler(anyString(), any(JsoupDocumentFetcher.class));
-        
-        Thread crawlingThread = new Thread(() -> {
-            try {
-                System.out.println("Crawling thread: Starting crawlWeb()...");
-                spyCrawlingDispatcher.crawlWeb();
-                System.out.println("Crawling thread: crawlWeb() finished gracefully.");
-            } catch (Exception e) {
-                System.err.println("CrawlingDispatcher threw unexpected exception: " + e.getClass().getSimpleName() + " - " + e.getMessage());
-                e.printStackTrace();
-            } finally {
-                System.out.println("Crawling thread: Exiting run() method.");
-            }
-        });
-        crawlingThread.start();
+
+        Thread crawlingThread = getCrawlingThread();
         Thread.sleep(1000);
 
         System.out.println("Test thread: Interrupting crawlingThread...");
@@ -250,5 +238,22 @@ public class CrawlingDispatcherTest {
 
         assertNotNull(spyCrawlingDispatcher.getRootNode(), "Root node should still be present");
         assertNotNull(spyCrawlingDispatcher.getRootNode().getWebsite(), "Start website should be set");
+    }
+
+    private Thread getCrawlingThread() {
+        Thread crawlingThread = new Thread(() -> {
+            try {
+                System.out.println("Crawling thread: Starting crawlWeb()...");
+                spyCrawlingDispatcher.crawlWeb();
+                System.out.println("Crawling thread: crawlWeb() finished gracefully.");
+            } catch (Exception e) {
+                System.err.println("CrawlingDispatcher threw unexpected exception: " + e.getClass().getSimpleName() + " - " + e.getMessage());
+                ExceptionLogger.log(e);
+            } finally {
+                System.out.println("Crawling thread: Exiting run() method.");
+            }
+        });
+        crawlingThread.start();
+        return crawlingThread;
     }
 }
