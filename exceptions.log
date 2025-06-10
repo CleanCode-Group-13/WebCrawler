@@ -79,3 +79,217 @@
 [2025-06-09T22:30:39.059450400] Exception: MalformedURLException - invalid-url
 [2025-06-09T22:47:11.384848400] Exception: MalformedURLException - invalid-url
 [2025-06-09T23:08:57.417594600] Exception: MalformedURLException - Simulated exception
+[2025-06-10T10:17:45.302841100] Exception: MalformedURLException - Simulated exception
+[2025-06-10T11:23:24.229709800] Exception: IOException - unknown protocol: javascript
+[2025-06-10T11:27:14.573873700] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:29:38.827343400] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:38:38.172737200] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:38:38.608214100] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:38:39.504339600] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:38:41.215843400] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:38:55.710178900] Exception: IOException - Expected scheme-specific part at index 5: http:
+[2025-06-10T11:38:56.263265300] Exception: MalformedURLException - Inferences%20we%20make%20about%20you
+[2025-06-10T11:38:57.857039600] Exception: MalformedURLException - Received fatal alert: handshake_failure
+[2025-06-10T11:38:57.857039600] Exception: IOException - Expected scheme-specific part at index 5: http:
+[2025-06-10T11:38:57.858039800] Exception: IOException - Expected scheme-specific part at index 5: http:
+[2025-06-10T11:38:57.859037] Exception: IOException - Expected scheme-specific part at index 5: http:
+[2025-06-10T11:38:57.861031] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:39:02.590336300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:39:02.649536700] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:39:03.003128500] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:39:03.061770] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:39:05.114045600] Exception: MalformedURLException - PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[2025-06-10T11:39:06.341338100] Exception: MalformedURLException - PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[2025-06-10T11:39:06.576107300] Exception: MalformedURLException - PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[2025-06-10T11:39:06.817465700] Exception: MalformedURLException - PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[2025-06-10T11:39:07.060895700] Exception: MalformedURLException - PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+[2025-06-10T11:39:07.673040500] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:39:07.759084300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:39:08.106482900] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:39:12.285261700] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:39:31.725114200] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:39:35.641193200] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:39:36.746649800] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:39:36.747648300] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:40:40.953977400] Exception: MalformedURLException - Failed to select a proxy
+[2025-06-10T11:40:45.079977400] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:40:45.151039] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:40:45.192520100] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:40:45.237401900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:40:45.348388700] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:40:56.240354500] Exception: MalformedURLException - Connection timed out: getsockopt
+[2025-06-10T11:40:59.892878500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:41:00.016719100] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:41:18.841029200] Exception: MalformedURLException - Connection timed out: getsockopt
+[2025-06-10T11:41:21.967274900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:42:41.746889900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:42:46.125401500] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:42:48.672699] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCi1mAHaQOS5DQYMojjLmKCrWU1DF6QOy_6A2SuGJUnF-d6nAp3P4JvbRG1nH0dzlLfIOcH1&hl=en
+[2025-06-10T11:42:52.538842400] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:42:54.636763600] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCiWiITMiQKhyJSUuWGTV0hcYfuRB2YcVlnsppbvLLPP7cnvZwEtW1drXgN24tHZhfK0hK9L&hl=en
+[2025-06-10T11:42:59.795469500] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://ads.youtube.com/ads/preferences/getytcookie?sig=ACi0TCiswlb0cGtiHaRJvwCavf-JmynC4laragPUY48L8mFoa4btBeTt69Dph_vN7aEWb4rhgson&hl=en
+[2025-06-10T11:43:01.975089] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCgygLb6pz6vrGRZXY-sSoSjIJvDEh7BkS0UEL-SkldnCYRpwquiREeosX6_Mh82UqUoHyQw&hl=en
+[2025-06-10T11:43:10.733474600] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCir9ArMvZy77QSm2Nge7kRbzieukmOsAQ0XD-MrhSKGDua7mw6yPyou1cr-5wgE_mCWSS8b&hl=en
+[2025-06-10T11:43:12.596297500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:43:12.598294800] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:43:49.260931300] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:06.407356100] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:07.268798100] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:07.475417300] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:08.708282700] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:11.046667500] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:13.123734100] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:16.899773900] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:44:23.907862200] Exception: IOException - unknown protocol: itms-apps
+[2025-06-10T11:45:03.206385800] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:45:03.686948400] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:45:04.645073800] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:45:06.567460600] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T11:45:17.274389700] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:45:17.568077100] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:45:17.654515700] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:45:22.185003300] Exception: IOException - unknown protocol: tel
+[2025-06-10T11:45:42.320920600] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:45:47.025403500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:45:47.025403500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:45:47.472185400] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:46:48.518548100] Exception: MalformedURLException - Failed to select a proxy
+[2025-06-10T11:46:49.775868500] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:46:49.801388400] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:46:49.831795800] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:46:49.857867300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:46:49.887476600] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T11:46:59.465166300] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:46:59.615763200] Exception: IOException - Only http & https protocols supported
+[2025-06-10T11:47:02.468279600] Exception: MalformedURLException - Connection timed out: getsockopt
+[2025-06-10T11:47:24.062744600] Exception: MalformedURLException - Connection timed out: getsockopt
+[2025-06-10T11:47:26.912282] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T12:39:26.787107400] Exception: IOException - Only http & https protocols supported
+[2025-06-10T12:39:29.186259800] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T12:39:34.205701600] Exception: MalformedURLException - Remote host terminated the handshake
+[2025-06-10T12:39:36.631438500] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCjAhWuZy9y_phEorxtghhJCMesBVYuYfcgwAuJhHQEvndpVQCFoC3a7o97NROSXSv3hP7Vr&hl=en
+[2025-06-10T12:39:42.382030500] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCi_2Nuz4ktO_t-Lz3cZG25WAy3xvFgXcF5i2uqOSYxxbnYT0b3WegBgdSDtxQg3NY3Qnxx0&hl=en
+[2025-06-10T12:39:49.727260300] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCiQYn0l6ZWwHROmAU4-pxYyzromvtYCm9u_1zETxyvV3aUT5y1Tvm0r0CnQdhtIfw3WhBWJ&hl=en
+[2025-06-10T12:40:00.234424900] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCjB9XR4U25ccv-ivJjqQTJeKqIqJeZRloVurC0nPmZDNIPzTN2Iv_dZBBX8x4_Pfl8e5Sd3&hl=en
+[2025-06-10T13:34:38.269272900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:06.366346500] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T13:35:08.634644700] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:35:27.856563600] Exception: MalformedURLException - Failed to select a proxy
+[2025-06-10T13:35:32.894208100] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:35:33.412431] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:35:33.601542300] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:35:33.766837200] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/course/]
+[2025-06-10T13:35:33.854600800] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:36.091910300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:37.079597600] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:35:37.754234800] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:35:41.098032200] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:42.903623100] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:35:42.904613500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:35:44.226826500] Exception: IOException - unknown protocol: itms-apps
+[2025-06-10T13:35:45.080915100] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://docs.moodle.org/en/Mobile_app]
+[2025-06-10T13:35:46.104501900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:48.071034] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:48.444703500] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:48.621762600] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:49.754365700] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:49.770322900] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCjDJleEJC1oNA8S1iYTUWfKCT7ciDh60nC7mNgBfLvoQ-SYZkAy1uhkIC4d-r3SXesBUOjm&hl=en
+[2025-06-10T13:35:49.810218500] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:49.813718500] Exception: MalformedURLException - No subject alternative DNS name matching www.efaktor.no found.
+[2025-06-10T13:35:50.039690500] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:35:50.040688] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:50.047669500] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:51.597693600] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:35:51.769958100] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:52.287813900] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:52.426251] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:54.376960100] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:55.303812600] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:56.270314] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:56.328346800] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:35:57.111390900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:57.433657200] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:57.708991700] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:58.059369800] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:35:59.544207100] Exception: MalformedURLException - Connection refused: getsockopt
+[2025-06-10T13:36:01.392385300] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://ads.youtube.com/ads/preferences/getytcookie?sig=ACi0TChoCrwlm_0DDw77VegO5QgrQcPGuRhNtyJtJqjD9_2ad2WzIzeCaxcVmGArnYgIkUDedTBb&hl=en
+[2025-06-10T13:36:02.306129800] Exception: MalformedURLException - Read timed out
+[2025-06-10T13:36:04.207167300] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCgR4GCvHH8p5IMhSAWJ_yqDc-R5t7e7eLd2rS2cRcqZ1_vosL0XmlTDPGm5AWsS8NREfSnk&hl=en
+[2025-06-10T13:36:04.972523] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:36:05.593317200] Exception: MalformedURLException - Connection refused: getsockopt
+[2025-06-10T13:36:09.883550] Exception: MalformedURLException - www.parliament.the-stationery-office.co.uk
+[2025-06-10T13:36:11.323165700] Exception: MalformedURLException - No subject alternative DNS name matching references.modernisation.gouv.fr found.
+[2025-06-10T13:36:12.434943900] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TChqnrlZk135RoUWYOoNj1ms_D8C3Fb-rUwEG_8x-NPkSXE0GR63F5A0fALzvZUbpiMb72q5&hl=en
+[2025-06-10T13:36:14.515309700] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:36:14.518310800] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:36:17.964713] Exception: MalformedURLException - Read timed out
+[2025-06-10T13:36:21.148659] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TChdTZJuikKfYQCF2Yd1gTCmD2NeBsHkjXEqLA7Sc-gv6vFjgEcuOMic7ADGO4kYPLHJ1YAy&hl=en
+[2025-06-10T13:36:21.971401] Exception: MalformedURLException - Read timed out
+[2025-06-10T13:36:25.101296400] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:36:33.677048700] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:36:54.669305200] Exception: MalformedURLException - www.freakzion.com
+[2025-06-10T13:37:04.982883800] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:39:00.407699] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:39:30.419889] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:39:31.867001] Exception: MalformedURLException - Failed to select a proxy
+[2025-06-10T13:39:36.683656] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:39:37.267871500] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:39:39.136686600] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:39:39.490449200] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/plugins/]
+[2025-06-10T13:39:39.772573800] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/mod/page/view.php?id=8751]
+[2025-06-10T13:39:40.186718700] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/mod/page/view.php?id=8750]
+[2025-06-10T13:39:40.540145900] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/mod/forum/view.php?id=55]
+[2025-06-10T13:39:40.546130] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/mod/page/view.php?id=8753&forceview=1]
+[2025-06-10T13:39:41.049950100] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/mod/page/view.php?id=7080&forceview=1]
+[2025-06-10T13:39:41.147211200] Exception: IOException - unknown protocol: ms-windows-store
+[2025-06-10T13:39:41.345514800] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/course/]
+[2025-06-10T13:39:41.491096300] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://download.moodle.org]
+[2025-06-10T13:39:43.701130800] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:39:45.220719600] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:39:45.353880900] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://docs.moodle.org/dev/]
+[2025-06-10T13:39:45.376806200] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:39:45.529423600] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:39:45.753256400] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://moodle.org/stats/]
+[2025-06-10T13:39:46.080693300] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://download.moodle.org/]
+[2025-06-10T13:39:47.738923100] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:39:50.533260] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:50.753259700] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:50.782913800] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:51.009140300] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:53.243709500] Exception: MalformedURLException - No subject alternative DNS name matching www.efaktor.no found.
+[2025-06-10T13:39:53.389420500] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:54.456149100] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:55.035333900] Exception: IOException - unknown protocol: itms-apps
+[2025-06-10T13:39:55.310144700] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:39:55.606281900] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:56.331032600] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:39:56.498648] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCiOXCrICmj09SZY0_nQ1ssyIwECI1FYWK7vwznCttpolGINLvHhp7dnX64JqNkbpx-a_AF0&hl=en
+[2025-06-10T13:39:57.185528300] Exception: MalformedURLException - HTTP error fetching URL. Status=429, URL=[https://docs.moodle.org/en/Mobile_app]
+[2025-06-10T13:39:59.033987100] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:40:06.971268] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCh_r1-0JAKRgbJBMaB26A09KTVa8Dydh2U7-s2a2W6uZVUAibgbYFd1kassOz_KgZpw95UE&hl=en
+[2025-06-10T13:40:07.624596900] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://ads.youtube.com/ads/preferences/getytcookie?sig=ACi0TCgp33bj1xaWEb9uv08QsXROYh_rmTeJmGKeTtGhLD_d5_SY663br1Z-KlhcyCyuiXWVu8Hj&hl=en
+[2025-06-10T13:40:08.065073900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:08.922195400] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:40:09.344667800] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:40:09.490278200] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:12.402766600] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:12.552364300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:12.713748] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:13.155175300] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:17.945694400] Exception: MalformedURLException - Connection refused: getsockopt
+[2025-06-10T13:40:19.363254400] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:19.753196400] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCjK6nv44-RhejVP0lbAtdMX0pLISBp6f_SHyekUG9k5b_JCTijV2cDRwMVBSmBUUMDMkAgO&hl=en
+[2025-06-10T13:40:20.578478900] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:21.470289600] Exception: MalformedURLException - Connection refused: getsockopt
+[2025-06-10T13:40:22.695659900] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:40:22.696657700] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:40:26.294919300] Exception: IOException - unknown protocol: javascript
+[2025-06-10T13:40:28.614451400] Exception: IOException - unknown protocol: tel
+[2025-06-10T13:40:28.626417600] Exception: MalformedURLException - Too many redirects occurred trying to load URL https://googleads.g.doubleclick.net/ads/preferences/checkcookie?sig=ACi0TCjI4S4FG1s9fL4-1TPr51DOwbLZBAa6KIS1fSrQlOFG1lNZygzDq0DNl8kjlW_ubteOEqEN&hl=en
+[2025-06-10T13:40:30.966556] Exception: IOException - Only http & https protocols supported
+[2025-06-10T13:40:37.111526500] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:37.591752600] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:40:59.103578600] Exception: MalformedURLException - Connection timed out: getsockopt
+[2025-06-10T13:40:59.968543100] Exception: MalformedURLException - Unhandled content type. Must be text/*, application/xml, or application/*+xml
+[2025-06-10T13:41:18.778935400] Exception: MalformedURLException - www.freakzion.com
+[2025-06-10T13:41:25.329582900] Exception: IOException - Only http & https protocols supported
