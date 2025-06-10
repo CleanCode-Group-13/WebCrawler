@@ -3,18 +3,15 @@ public class Main {
     public static void main(String[] args) throws Exception {
         UserData userData;
         WebsiteNode rootNode;
+        JsoupDocumentFetcher fetcher;
 
         UserQuery userQuery = new UserQuery();
         userData = userQuery.getUserData();
+        fetcher = new DocumentFetcher();
 
-        CrawlingDispatcher crawlingDispatcher = new CrawlingDispatcher(userData);
+        CrawlingDispatcher crawlingDispatcher = new CrawlingDispatcher(userData, fetcher);
         crawlingDispatcher.crawlWeb();
         rootNode = crawlingDispatcher.getRootNode();
-
-        /**
-        TranslationDispatcher translator = new TranslationDispatcher(rootNode, userData.targetLanguage);
-        translator.translateWebsiteNodes();
-         **/
 
         ResultProducer resultProducer = new ResultProducer(userData, rootNode);
         String mdString = resultProducer.makeMdString();
