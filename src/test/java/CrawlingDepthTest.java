@@ -1,4 +1,6 @@
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.ValueSource;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -6,51 +8,64 @@ import java.io.InputStream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CrawlingDepthTest {
-
     @Test
     void getCorrectCrawlingDepthFromUser() {
         InputStream originalSystemInput = System.in;
-        String testCrawlingDepth = "1\n";
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(testCrawlingDepth.getBytes());
-        System.setIn(byteArrayInputStream);
+        String testInput = "1\n";
+        System.setIn(new ByteArrayInputStream(testInput.getBytes()));
 
-        CrawlingDepth crawlingDepth = new CrawlingDepth();
-        int crawlingDepthFromUser = crawlingDepth.getCrawlingDepthFromUser();
-        assertEquals(1, crawlingDepthFromUser);
-
-        System.setIn(originalSystemInput);
+        try {
+            CrawlingDepth crawlingDepth = new CrawlingDepth();
+            int result = crawlingDepth.getCrawlingDepthFromUser();
+            assertEquals(1, result);
+        } finally {
+            System.setIn(originalSystemInput);
+        }
     }
 
     @Test
-    void getIncorrectCrawlingDepthFromUser() {
+    void getCrawlingDepthFromUserReturnsInputValue() {
         InputStream originalSystemInput = System.in;
-        String testCrawlingDepth = "3\n";
-        ByteArrayInputStream byteArrayInputStream = new ByteArrayInputStream(testCrawlingDepth.getBytes());
-        System.setIn(byteArrayInputStream);
+        String testInput = "3\n";
+        System.setIn(new ByteArrayInputStream(testInput.getBytes()));
 
-        CrawlingDepth crawlingDepth = new CrawlingDepth();
-        int crawlingDepthFromUser = crawlingDepth.getCrawlingDepthFromUser();
-        assertNotEquals(1, crawlingDepthFromUser);
-
-        System.setIn(originalSystemInput);
+        try {
+            CrawlingDepth crawlingDepth = new CrawlingDepth();
+            int result = crawlingDepth.getCrawlingDepthFromUser();
+            assertEquals(3, result);
+        } finally {
+            System.setIn(originalSystemInput);
+        }
     }
 
     @Test
-    void isValidCrawlingDepth() {
+    void getCrawlingDepthHandlesNonIntegerInput() {
+        InputStream originalSystemInput = System.in;
+        String testInput = "abc\n1\n";
+        System.setIn(new ByteArrayInputStream(testInput.getBytes()));
+
+        try {
+            CrawlingDepth crawlingDepth = new CrawlingDepth();
+            int result = crawlingDepth.getCrawlingDepthFromUser();
+            assertEquals(1, result);
+        } finally {
+            System.setIn(originalSystemInput);
+        }
+    }
+
+    @ParameterizedTest
+    @ValueSource(ints = {1, 2, 3})
+    void validCrawlingDepthsAreAccepted(int depth) {
         CrawlingDepth crawlingDepth = new CrawlingDepth();
+        crawlingDepth.crawlingDepth = depth;
+        assertTrue(crawlingDepth.isValidCrawlingDepth());
+    }
 
-        crawlingDepth.crawlingDepth = 1;
-        assertTrue(crawlingDepth.isValidCrawlingDepth());
-        crawlingDepth.crawlingDepth = 2;
-        assertTrue(crawlingDepth.isValidCrawlingDepth());
-        crawlingDepth.crawlingDepth = 3;
-        assertTrue(crawlingDepth.isValidCrawlingDepth());
-
-        crawlingDepth.crawlingDepth = 0;
-        assertFalse(crawlingDepth.isValidCrawlingDepth());
-        crawlingDepth.crawlingDepth = 4;
-        assertFalse(crawlingDepth.isValidCrawlingDepth());
-        crawlingDepth.crawlingDepth = -1;
+    @ParameterizedTest
+    @ValueSource(ints = {-1, 0, 4, 99})
+    void invalidCrawlingDepthsAreRejected(int depth) {
+        CrawlingDepth crawlingDepth = new CrawlingDepth();
+        crawlingDepth.crawlingDepth = depth;
         assertFalse(crawlingDepth.isValidCrawlingDepth());
     }
 }
