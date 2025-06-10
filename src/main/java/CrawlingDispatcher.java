@@ -13,7 +13,7 @@ public class CrawlingDispatcher {
     private UserData userData;
     private WebsiteNode rootNode;
     private Set<String> crawledUrls = Collections.synchronizedSet(new HashSet<>());
-    private JsoupDocumentFetcher jsoupDocumentFetcher = new DocumentFetcher();
+    private JsoupDocumentFetcher jsoupDocumentFetcher;
     private static final int THREAD_POOL_SIZE = 15; // works the best for my system
     private ExecutorService executorService;
 
